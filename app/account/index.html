@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>KMITL Pay Services | providive you with the right tools and technologies to make you succeed online.</title>
+        <!-- Load Roboto font -->
+        <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <!-- Load css styles  -->
+        <link rel="stylesheet" type="text/css" href="./app-content/css/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="./app-content/css/bootstrap-responsive.css" />  
+        <link rel="stylesheet" type="text/css" href="./app-content/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="./app-content/css/prompt.css" />
+     
+        <link rel="stylesheet" href="./app-content/css/style.css">
+      
+    </head>
+    
+    <body>
+    <!-- Bottom Left (ribbin)-->
+    <img src="./app-content/images/black_ribbon_bottom_left.png" class="black-ribbon stick-bottom stick-left"/>
+    
+<!-- Account Start -->
+<div class="section secondary-section">
+<div class="container-fluid">
+<div class="span4">
+<h1>My Account</h1>
+<div class="form-container">
+    <div class="detail" style="color: grey">
+        <h5>Account ID : </h5>
+        <h4>Your balances : </h4>
+        <br>
+    </div>
+    <form method="post" style="color: brown">
+
+    <strong><h2>Edit Profile</h2></strong>
+        <div class="form-group">
+            <label for="firstName">First name</label>
+            <input type="text" id="firstName" class="form-control" ng-model="vm.user.firstName" required />
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last name</label>
+            <input type="text" id="lastName" class="form-control" ng-model="vm.user.lastName" required />
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" ng-model="vm.user.username" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" class="form-control" ng-model="vm.user.password" />
+        </div>
+        <div class="form-group">
+            <button class="button button-ps" ng-click="vm.saveUser()">Save</button>
+           
+        </div>
+    </form>
+</div>
+</div>
+</div>
+</div>
+
+<!-- Account End -->
+
+        
+        <!-- ScrollUp button start -->
+        <div class="scrollup">
+            <a href="#">
+                <i class="icon-up-open"></i>
+            </a>
+        </div>
+        <!-- ScrollUp button end -->
+        <!-- Include javascript -->
+        <script src="./app-content/js/jquery.js"></script>
+        <script type="text/javascript" src="./app-content/js/jquery.mixitup.js"></script>
+        <script type="text/javascript" src="./app-content/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./app-content/js/modernizr.custom.js"></script>
+        <script type="text/javascript" src="./app-content/js/jquery.placeholder.js"></script>
+        <script type="text/javascript" src="./app-content/js/jquery.inview.js"></script>
+        <script type="text/javascript" src="./app-content/js/app.js"></script>
+
+    </body>
+</html>

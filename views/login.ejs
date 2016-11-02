@@ -1,0 +1,41 @@
+﻿<%- include('partials/header') %>
+<div class="form-container">
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <% if(locals.success) { %>
+        <div class="alert alert-success"><%= success %></div>
+    <% } %>
+<div class="wrapper">
+    <form method="post">
+    
+  <div class="logo"></div>
+  <div class="login-block">
+    <div class="row">
+            <div class="col-sm-6">
+                <div class="iframe-container pull-left">
+                    <img src="https://www.img.in.th/images/22bf3076b384bf3d7fb0b70ac8bfba40.png">
+                    <p>KMITL Pay Services | online payment</p>
+                    <p><a href="http://seproject-dbfc4.firebaseapp.com" target="_blank">        learn more</a></p>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+            <h1>Login</h1>
+            <input type="text" name="username" placeholder="Username"  id="username" value="<%= locals.username || '' %>" class="form-control" />
+
+            <input type="password" name="password" class="form-control" value="" placeholder="Password" id="password" />
+            <button type="submit">Login</button>
+            <br><br>
+
+            <p4>   Not registered? <a href="http://glacial-gorge-51031.herokuapp.com/">Create an account </a> </p4>
+             
+            </div>
+        </div>
+    </div>
+ </div>
+ </div>
+ </form>
+</div>
+
+<%- include('partials/footer') %>

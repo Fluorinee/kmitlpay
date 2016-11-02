@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>KMITL Pay Services | providive you with the right tools and technologies to make you succeed online.</title>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+     <!-- Fav and touch icons -->
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./app-content/images/ico/apple-touch-icon-144.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./app-content/images/ico/apple-touch-icon-114.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./app-content/images/apple-touch-icon-72.png">
+        <link rel="apple-touch-icon-precomposed" href="./app-content/images/ico/apple-touch-icon-57.png">
+        <link rel="shortcut icon" href="./app-content/images/ico/favicon.ico">
+   
+</head>
+<body>
+ <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a href="/login" class="brand">
+                        <img src="./app-content/images/logo.png" width="120" height="40" alt="Logo" />
+                        <!-- This is website logo -->
+                    </a>
+                    <!-- Navigation button, visible on small resolution -->
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <i class="icon-menu"></i>
+                    </button>
+
+                <header>
+               
+                   <ul class="nav pull-right">
+                       <li ng-class="{active: activeTab === 'home'}"><a ui-sref="home">Home</a></li>
+                       <li ng-class="{active: activeTab === 'services'}"><a ui-sref="services">Services</a></li>
+                       <li ng-class="{active: activeTab === 'faq'}"><a ui-sref="faq">FAQ</a></li>
+                       <li ng-class="{active: activeTab === 'account'}"><a ui-sref="account">Account</a></li>
+                       <li><a href="/login" target="_self" class="button button-sp">Logout</a></li>
+                   
+                   </ul>
+                   <div class="flash-message" ng-if="flash">
+                       <div class="{{'alert alert-' + flash.type}}" ng-bind="flash.message"></div>
+                   </div>
+               
+                </header>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- main -->
+    <main ui-view></main>
+
+    <!-- footer -->
+    <footer>
+        
+        <!-- Footer section start -->
+        <div class="footer">
+            <p>&copy; 2016 Website by <a href="http://ce.kmitl.ac.th">CE KMITL</a>
+        </div>
+        <!-- Footer section end -->
+
+    </footer>
+    
+
+    <!-- external scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+
+    <!-- application scripts -->
+    <script src="app.js"></script>
+    <script src="app-services/user.service.js"></script>
+    <script src="app-services/flash.service.js"></script>
+    <script src="home/index.controller.js"></script>
+    <script src="account/index.controller.js"></script>
+</body>
+</html>
